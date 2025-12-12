@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БыстроЕсть - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    Шапка
+    <header class="header">
+        <div class="container hedcon">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/logo_header.jpg" alt="logo">
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="city">Вологда</div>
+                    <button class="cart-btn" id="cartBtn">
+                        <p>Корзина</p>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <button class="burger-menu" id="burgerMenu">
+                    <img src="./images/menu.png" alt="menu">
+                </button>
+            </div>
+        </div>
+        <!-- Мобильное меню -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><div class="city-mobile">
+                        <button class="cart-btn" id="cartBtn">
+                            <p>Корзина</p>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Карусель баннеров -->
+    <section class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="slide active" id="sl1">
+                    <div class="slide-content">
+                        <h2>ЗИМА — НЕ ПОВОД МЕРЗНУТЬ!</h2>
+                        <p>Пусть на улице метель, а у вас — пицца-карусель!</p>
+                    </div>
+                </div>
+                <div class="slide" id="sl2">
+                    <div class="slide-content">
+                        <h2>НОВИНКА СЕЗОНА</h2>
+                        <p>Тёмная сторона вкуса: люксовый бургер на угольной булочке</p>
+                    </div>
+                </div>
+                <div class="slide" id="sl3">
+                    <div class="slide-content">
+                        <h2>ДОСТАВИМ ГОРЯЧЕЙ</h2>
+                        <p>БЕСПЛАТНО при заказе от 999 ₽</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Постоянные баннеры -->
+    <section class="container">
+        <div class="banners">
+            <div class="banner charity-banner">
+                <div class="banner-content">
+                </div>
+            </div>
+            <div class="banner feedback-banner help">
+                <div class="banner-content">
+                    <button class="feedback-btn"><a href="./contacts.html">Оставить отзыв</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню с категориями -->
+    <section class="container menu-section">
+        <h2 class="section-title">Наше меню</h2>
+        <div class="category-tabs">
+            <button class="category-btn active" data-category="all">Все</button>
+            <button class="category-btn" data-category="burgers">Бургеры</button>
+            <button class="category-btn" data-category="snacks">Закуски</button>
+            <button class="category-btn" data-category="drinks">Напитки</button>
+            <button class="category-btn" data-category="desserts">Десерты</button>
+        </div>
+        <div class="products-grid">
+            <!-- Продукты будут генерироваться через JS -->
+        </div>
+    </section>
+
+    <!-- SEO блок -->
+    <section class="container seo-section">
+        <div class="seo-content">
+            <div class="seo-text">
+                <h2>О БыстроЕсть</h2>
+                <p>Мы - современное заведение быстрого питания, которое заботится о качестве и вкусе нашей еды. Наша философия проста: свежие ингредиенты, быстрый сервис и доступные цены.</p>
+                <p>Основанная в 2015 году, наша сеть постоянно растет, но мы никогда не забываем о наших корнях - готовить вкусную еду для всех и каждого.</p>
+                <a href="about.html" class="read-more">Подробнее о компании</a>
+            </div>
+            <div class="seo-image">
+                <div class="image-placeholder"><img src="./images/seo.jpg" alt="seo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="container news-section">
+        <h2 class="section-title">Новости</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <img src="./images/news1.jpg" alt="новость 1">
+                <div class="news-date">12 ноября 2025</div>
+                <h3>Тесто на чистой воде</h3>
+                <p>Мы кардинально обновили рецептуру основы для самой хрустящей корочки.</p>
+                <a href="news.html" class="news-link">Подробнее</a>
+            </div>
+            <div class="news-card">
+                <img src="./images/news2.jpg" alt="новость 2">
+                <div class="news-date">12 ноября 2025</div>
+                <h3>Перекус со смыслом</h3>
+                <p>Лимитированная серия мини-закусок от приглашённого шефа.</p>
+                <a href="news.html" class="news-link">Подробнее</a>
+            </div>
+            <div class="news-card">
+                <img src="./images/news3.jpg" alt="новость 3">
+                <div class="news-date">12 ноября 2025</div>
+                <h3>Тёмная сторона вкуса</h3>
+                <p>В меню появился люксовый бургер на угольной булочке.</p>
+                <a href="news.html" class="news-link">Подробнее</a>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="news.html" class="view-all-btn">Смотреть больше</a>
+        </div>
+    </section>
+
+    <!-- Поставщики -->
+    <section class="container suppliers-section">
+        <h2 class="section-title">Наши поставщики</h2>
+        <p class="section-discr">Наша компания всегда находится в поисках новых поставщиков. Если у вас есть какое-то предложение, мы готовы его рассмотреть и связаться с вами для дальнейшего обсуждения сотрудничества</p>
+        <div class="suppliers-slider">
+            <div class="slider-track">
+                <div class="suppliers-slide active">
+                    <div class="logos-grid">
+                        <div class="logo-placeholder"><img src="./images/company1.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company2.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company3.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company4.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company5.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company6.jpg" alt="компания"></div>
+                    </div>
+                </div>
+                <div class="suppliers-slide">
+                    <div class="logos-grid">
+                        <div class="logo-placeholder"><img src="./images/company7.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company8.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company9.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company10.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company11.jpg" alt="компания"></div>
+                        <div class="logo-placeholder"><img src="./images/company12.jpg" alt="компания"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="supplier-dot active"></span>
+                <span class="supplier-dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo"><img src="./images/logo_footer.png" alt="logo"></div>
+                </div>
+                <div class="footer-middle">
+                    <h4>Контакты</h4>
+                    <p>г. Вологда, ул. Пушкина, д. 10б</p>
+                    <p><a href="tel:+7(594)321-54-76">+7 (594) 321-54-76</a></p>
+                    <p><a href="mailto:info@bistroest.ru">info@bistroest.ru</a></p>
+                    <p>Пн-сб: 8:00 - 20:00</p>
+                    <p>Воскресенье - выходной</p>
+                </div>
+                <div class="footer-right">
+                    <h4>Соц-сети</h4>
+                    <div class="social-icons">
+                        <a href="#">Вконтакте</a>
+                        <a href="#">Телеграмм</a>
+                        <a href="#">Рутуб</a>
+                    </div>
+                    <div class="delivery-partners">
+                        <a href="#"><h5>ЯндексДоставка</h5></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="#" class="polit">Политика конфиденциальности</a>
+                <p>© 2025 БыстроЕсть</p>
+                <p>Сделано - HeaFikeDid</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ваш заказ</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <!-- Товары будут добавляться через JS -->
+                    <p class="empty-cart">Корзина пуста</p>
+                </div>
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span id="cartTotal">0 ₽</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="order-btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

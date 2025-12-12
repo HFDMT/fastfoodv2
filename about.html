@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БыстроЕсть - О нас</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container hedcon">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/logo_header.jpg" alt="logo">
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="city">Вологда</div>
+                    <button class="cart-btn" id="cartBtn">
+                        <p>Корзина</p>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <button class="burger-menu" id="burgerMenu">
+                    <img src="./images/menu.png" alt="menu">
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><div class="city-mobile">
+                        <button class="cart-btn" id="cartBtn">
+                            <p>Корзина</p>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 100px; padding: 40px 0;">
+        <h1 class="section-title">О нас</h1>
+        
+        <div class="seo-content" style="margin: 40px 0;">
+            <div class="seo-text">
+                <h2>Наша история</h2>
+                <p>БыстроЕсть была основана в 2015 году с простой миссией: обеспечить быстрым, вкусным и качественным питанием каждого, кто ценит своё время, но не готов жертвовать вкусом.</p>
+                <p>Начав с небольшого кафе в Вологде, мы выросли в сеть, которая продолжает расширяться. Но несмотря на рост, мы сохраняем семейный подход к каждому клиенту.</p>
+                
+                <h2 style="margin-top: 30px;">Наша философия</h2>
+                <p>Мы верим, что хорошая еда должна быть доступна каждому. Наша философия строится на трёх принципах:</p>
+                <ul style="margin: 20px 0; padding-left: 20px;">
+                    <li style="margin-bottom: 10px;">Свежие ингредиенты — мы работаем только с проверенными поставщиками</li>
+                    <li style="margin-bottom: 10px;">Быстрый сервис — ваш заказ будет готов максимально быстро</li>
+                    <li>Доступные цены — качественная еда по разумной цене</li>
+                </ul>
+                
+                <h2 style="margin-top: 30px;">Наши ценности</h2>
+                <p>Мы не просто продаём еду — мы создаём опыт. Каждый наш блюдо — это результат тщательной разработки и тестирования.</p>
+                <p>Мы активно участвуем в жизни сообщества и часть средств от продаж направляем на благотворительность.</p>
+                
+                <h2 style="margin-top: 30px;">Наша команда</h2>
+                <p>Наша команда — это наши самые ценные активы. От поваров до курьеров, каждый член команды разделяет наши ценности и стремится сделать ваш опыт лучше.</p>
+            </div>
+            <div class="seo-image">
+                <div class="image-placeholder" style="width: 100%;"><img src="./images/seo.jpg" alt="seo"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo"><img src="./images/logo_footer.png" alt="logo"></div>
+                </div>
+                <div class="footer-middle">
+                    <h4>Контакты</h4>
+                    <p>г. Вологда, ул. Пушкина, д. 10б</p>
+                    <p><a href="tel:+7(594)321-54-76">+7 (594) 321-54-76</a></p>
+                    <p><a href="mailto:info@bistroest.ru">info@bistroest.ru</a></p>
+                    <p>Пн-сб: 8:00 - 20:00</p>
+                    <p>Воскресенье - выходной</p>
+                </div>
+                <div class="footer-right">
+                    <h4>Соц-сети</h4>
+                    <div class="social-icons">
+                        <a href="#">Вконтакте</a>
+                        <a href="#">Телеграмм</a>
+                        <a href="#">Рутуб</a>
+                    </div>
+                    <div class="delivery-partners">
+                        <a href="#"><h5>ЯндексДоставка</h5></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="#" class="polit">Политика конфиденциальности</a>
+                <p>© 2025 БыстроЕсть</p>
+                <p>Сделано - HeaFikeDid</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ваш заказ</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <p class="empty-cart">Корзина пуста</p>
+                </div>
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span id="cartTotal">0 ₽</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="order-btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

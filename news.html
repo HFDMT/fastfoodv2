@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БыстроЕсть - Новости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container hedcon">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/logo_header.jpg" alt="logo">
+                </div>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="city">Вологда</div>
+                    <button class="cart-btn" id="cartBtn">
+                        <p>Корзина</p>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+                <button class="burger-menu" id="burgerMenu">
+                    <img src="./images/menu.png" alt="menu">
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><div class="city-mobile">
+                        <button class="cart-btn" id="cartBtn">
+                            <p>Корзина</p>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 100px; padding: 40px 0;">
+        <h1 class="section-title">Новости</h1>
+        
+        <div class="news-grid" style="margin: 40px 0;">
+            <div class="news-card">
+                <img src="./images/news1.jpg" alt="новость 1">
+                <div class="news-date">12 ноября 2025</div>
+                <h3>Тесто на чистой воде</h3>
+                <p>Мы кардинально обновили рецептуру основы для самой хрустящей корочки. Теперь мы используем только чистую артезианскую воду и муку высшего сорта. Это делает наше тесто не только вкуснее, но и полезнее.</p>
+                <a href="#" class="news-link">Подробнее</a>
+            </div>
+            <div class="news-card">
+                <img src="./images/news2.jpg" alt="новость 1">
+                <div class="news-date">10 ноября 2025</div>
+                <h3>Перекус со смыслом</h3>
+                <p>Лимитированная серия мини-закусок от приглашённого шефа. Шеф-повар из Милана создал для нас уникальную линейку закусок, которые сочетают в себе итальянские традиции и русские предпочтения.</p>
+                <a href="#" class="news-link">Подробнее</a>
+            </div>
+            <div class="news-card">
+                <img src="./images/news3.jpg" alt="новость 1">
+                <div class="news-date">8 ноября 2025</div>
+                <h3>Тёмная сторона вкуса</h3>
+                <p>В меню появился люксовый бургер на угольной булочке. Этот уникальный продукт создан для настоящих гурманов. Угольная булочка не только придаёт оригинальный вид, но и содержит активированный уголь, полезный для пищеварения.</p>
+                <a href="#" class="news-link">Подробнее</a>
+            </div>
+            <div class="news-card">
+                <img src="./images/news1.jpg" alt="новость 1">
+                <div class="news-date">5 ноября 2025</div>
+                <h3>Новая точка доставки</h3>
+                <p>Мы открыли новую точку доставки в центре города. Теперь заказы в центральном районе будут доставляться ещё быстрее - в среднем за 25 минут.</p>
+                <a href="#" class="news-link">Подробнее</a>
+            </div>
+            <div class="news-card">
+                <img src="./images/news2.jpg" alt="новость 1">
+                <div class="news-date">1 ноября 2025</div>
+                <h3>Осенние скидки</h3>
+                <p>С 1 по 30 ноября действуют специальные осенние скидки на всю продукцию. При заказе от 1000 рублей - скидка 15%.</p>
+                <a href="#" class="news-link">Подробнее</a>
+            </div>
+            <div class="news-card">
+                <img src="./images/news3.jpg" alt="новость 1">
+                <div class="news-date">28 октября 2025</div>
+                <h3>Благотворительная акция</h3>
+                <p>Часть средств с продаж новинок будет направлена на поддержку ветеранов войны. Мы гордимся тем, что можем помогать тем, кто защищал нашу страну.</p>
+                <a href="#" class="news-link">Подробнее</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo"><img src="./images/logo_footer.png" alt="logo"></div>
+                </div>
+                <div class="footer-middle">
+                    <h4>Контакты</h4>
+                    <p>г. Вологда, ул. Пушкина, д. 10б</p>
+                    <p><a href="tel:+7(594)321-54-76">+7 (594) 321-54-76</a></p>
+                    <p><a href="mailto:info@bistroest.ru">info@bistroest.ru</a></p>
+                    <p>Пн-сб: 8:00 - 20:00</p>
+                    <p>Воскресенье - выходной</p>
+                </div>
+                <div class="footer-right">
+                    <h4>Соц-сети</h4>
+                    <div class="social-icons">
+                        <a href="#">Вконтакте</a>
+                        <a href="#">Телеграмм</a>
+                        <a href="#">Рутуб</a>
+                    </div>
+                    <div class="delivery-partners">
+                        <a href="#"><h5>ЯндексДоставка</h5></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="#" class="polit">Политика конфиденциальности</a>
+                <p>© 2025 БыстроЕсть</p>
+                <p>Сделано - HeaFikeDid</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ваш заказ</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cartItems">
+                    <p class="empty-cart">Корзина пуста</p>
+                </div>
+                <div class="cart-total">
+                    <span>Итого:</span>
+                    <span id="cartTotal">0 ₽</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="order-btn">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
