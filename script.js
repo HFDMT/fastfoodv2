@@ -290,18 +290,6 @@ function updateSuppliersSlider() {
     });
 }
 
-// Отправка отзыва
-document.querySelector('.submit-feedback')?.addEventListener('click', () => {
-    const textarea = feedbackModal.querySelector('textarea');
-    if (textarea.value.trim()) {
-        alert('Спасибо за ваш отзыв!');
-        textarea.value = '';
-        feedbackModal.classList.remove('active');
-    } else {
-        alert('Пожалуйста, напишите ваш отзыв');
-    }
-});
-
 // Оформление заказа
 document.querySelector('.order-btn')?.addEventListener('click', () => {
     if (cart.length === 0) {
